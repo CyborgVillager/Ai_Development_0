@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=D:\PyProject\Machine_Learning\Tech_With_Tim\Session_0\tectim_aitut_venv"
+set "VIRTUAL_ENV=D:\PyProject\GitRespo\Ai_Dev_Intro\Ai_Development_0\Machine_Learning\Tech_With_Tim\Session_0\tectim_aitut_venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
