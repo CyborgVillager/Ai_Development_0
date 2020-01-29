@@ -27,8 +27,17 @@ v0 Intro to Ai Dev Everything has it's Beginning: Will be completing a video fro
 v1 Rebooted: Rebooted orig files, starting from scratch and build up from there.
 v2 Installed: Installed tensorflow & Keras
                 v2.5 Edit: Paused will resume @ 1/28/2020
---v3 Pip install: installed sklearn, panda, & numpy, made a folder to hold .csv files. test.py now prints out the
+v3 Pip install: installed sklearn, panda, & numpy, made a folder to hold .csv files. test.py now prints out the
                     csv files. Will work on making the program predict on 1/29/20
+
+--v4 Beta version .5 Prediction Implemented: The program will now train it self 4 90% & do test 4 10%
+                                Line 22 @ test.py takes all of the attributes from Features & Labels ->
+                                the program will split them up into 4 arrays  x_train -> section of numpy.array
+                                (data.drop([predictiction],1)) , y_train -> numpy.array(data[predictiction])
+                                 x_test & y_test will test the accuracy of the program/model.
+
+                                 Imported import sklearn to session1_source/tim_lesson_source.py
+                                 Program has basic prediction, of the excel file student-mat.csv, will upgrade further
 
 
 
