@@ -23,7 +23,7 @@ Y = numpy.array(data[predictiction])
 # x_test & y_test will test the accuracy of the program/model.
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
 # Training Model
-linear = linear_model.LinearRegression()
+'''linear = linear_model.LinearRegression()
 # linear.fit will fit the data -> x_train, y_train to find the 'best fit' line, it will then store the info
 # on linear = easier to test it
 linear.fit(x_train, y_train)
@@ -36,7 +36,12 @@ print(accuracy)
 # https://docs.python.org/3/library/pickle.html
 # Side note for future reference pickle is not secure, so for future files make sure its clean
 with open('studentmodels.pickle', 'wb') as file:
-    pickle.dump(linear, file)
+    pickle.dump(linear, file) 
+'''
+# 1/30/20 file loads/open & start @ pickle_in = open('studentmodels.pickle', 'rb')
+# the program skips the training process and heads straight to getting the data & saving it
+# Speed is faster
+
 # Read the pickle file
 pickle_in = open('studentmodels.pickle', 'rb')
 # Loading the picking onto the linear model

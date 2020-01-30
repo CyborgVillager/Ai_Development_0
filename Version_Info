@@ -46,7 +46,11 @@ v5 Prediction Assembled .8: Program test.py can now predict student's grade with
                                  Updated ReadMe.md, learned a bit more about ReadMe.txt posting for version control
                                  will be using # to make a title -> # Ai_Development_0
 
---v6 matplotlip Installed:  open / create a file called studentmodels and save it by using pickle.dump in the directory
+v6 matplotlip Installed:  open / create a file called studentmodels and save it by using pickle.dump in the directory
                               link for pickle https://docs.python.org/3/library/pickle.html
                                 Side note for future reference pickle is not secure, so for future
                                 files make sure its clean
+
+--v7 Process Increase: Commented out line 26-40 @  file test.py, now it  loads/open & start @
+                    pickle_in = open('studentmodels.pickle', 'rb')  the program skips the training process and heads
+                    straight to getting the data & saving it aka processing the data is faster
