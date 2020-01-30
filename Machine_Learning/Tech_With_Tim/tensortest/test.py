@@ -32,6 +32,15 @@ linear.fit(x_train, y_train)
 accuracy = linear.score(x_test, y_test)
 print(accuracy)
 
+# open / create a file called studentmodels and save it by using pickle.dump in the directory
+# https://docs.python.org/3/library/pickle.html
+# Side note for future reference pickle is not secure, so for future files make sure its clean
+with open('studentmodels.pickle', 'wb') as file:
+    pickle.dump(linear, file)
+# Read the pickle file
+pickle_in = open('studentmodels.pickle', 'rb')
+# Loading the picking onto the linear model
+linear = pickle.load(pickle_in)
 
 print('Coefficient: \n', linear.coef_)
 print('The Bigger the Coefficient the bigger the attribute has for its value ')

@@ -39,10 +39,14 @@ v4 Beta version .5 Prediction Implemented: The program will now train it self 4 
                                  Imported import sklearn to session1_source/tim_lesson_source.py
                                  Program has basic prediction, of the excel file student-mat.csv, will upgrade further
 
---v5 Prediction Assembled .8: Program test.py can now predict student's grade within a margin,
+v5 Prediction Assembled .8: Program test.py can now predict student's grade within a margin,
                                 further work is needed to improve accuracy, will test the array from the models that
                                  were not trained on and see the results from there.
 
                                  Updated ReadMe.md, learned a bit more about ReadMe.txt posting for version control
                                  will be using # to make a title -> # Ai_Development_0
 
+--v6 matplotlip Installed:  open / create a file called studentmodels and save it by using pickle.dump in the directory
+                              link for pickle https://docs.python.org/3/library/pickle.html
+                                Side note for future reference pickle is not secure, so for future
+                                files make sure its clean
