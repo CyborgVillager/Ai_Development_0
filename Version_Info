@@ -81,5 +81,7 @@ v10 Introduction to K-Nearest Neighbors: New folder called Introduction to KNN h
                                              knn_tutorial. The car data has been imported to car_data_set for this
                                              experiment
 
---v11 README Introduction to K-Nearest Neighbors Updated: Updated the information to Introduction to K-Nearest Neighbors
+v11 README Introduction to K-Nearest Neighbors Updated: Updated the information to Introduction to K-Nearest Neighbors
                                                             to assist in knowing a bit more about the application
+
+--v12 Printed Out-Statement: knn_tutorial is now able to print the results from car_data_set/car.data

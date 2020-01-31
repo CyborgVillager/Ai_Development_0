@@ -20,9 +20,9 @@ Link for the Car Data:
  
 **Data Set Information:**
 
-Car Evaluation Database was derived from a simple hierarchical decision model originally developed for the demonstration of DEX, M. Bohanec, V. Rajkovic: Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.). The model evaluates cars according to the following concept structure:
+>Car Evaluation Database was derived from a simple hierarchical decision model originally developed for the demonstration of DEX, M. Bohanec, V. Rajkovic: Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.). The model evaluates cars according to the following concept structure:
 
-CAR car acceptability
+>CAR car acceptability
 . PRICE overall price
 . . buying buying price
 . . maint price of the maintenance
@@ -34,16 +34,18 @@ CAR car acceptability
 . . safety estimated safety of the car
 
 
-**Attribute Information:**
+>**Attribute Information:**
 
- **_Class Values:_** 
+ >**_Class Values:_** 
 unacc, acc, good, vgood
 
-**_Attributes:_**
+>**_Attributes:_**
 
-**buying:** vhigh, high, med, low.
+>**buying:** vhigh, high, med, low.
 **maint:** vhigh, high, med, low.
 **doors:** 2, 3, 4, 5more.
 **persons:** 2, 4, more.
 **lug_boot:** small, med, big.
-**safety:** low, med, high.
+**safety:** low, med, high. >
+
+~ _UCI Machine Learning Repository_
