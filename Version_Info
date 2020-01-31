@@ -51,6 +51,11 @@ v6 matplotlip Installed:  open / create a file called studentmodels and save it 
                                 Side note for future reference pickle is not secure, so for future
                                 files make sure its clean
 
---v7 Process Increase: Commented out line 26-40 @  file test.py, now it  loads/open & start @
+v7 Process Increase: Commented out line 26-40 @  file test.py, now it  loads/open & start @
                     pickle_in = open('studentmodels.pickle', 'rb')  the program skips the training process and heads
                     straight to getting the data & saving it aka processing the data is faster
+
+--v8  Re-Training Model for the students Modified: line 22-42 has been commented out for re-training the program,
+                                                    moved x_train, x_test, y_train, y_test =
+                                                    sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
+                                                    to line 19.

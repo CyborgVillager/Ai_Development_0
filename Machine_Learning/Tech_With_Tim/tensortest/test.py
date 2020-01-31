@@ -16,31 +16,35 @@ predictiction = 'G3'
 X = numpy.array(data.drop([predictiction],1))
 # Labels
 Y = numpy.array(data[predictiction])
-
-# The program will now train it self 4 90% & do test 4 10%
-# Line 22 takes all of the attributes from Features & Labels -> the program will split them up into 4 arrays
-# x_train -> section of numpy.array(data.drop([predictiction],1)) , y_train -> numpy.array(data[predictiction])
-# x_test & y_test will test the accuracy of the program/model.
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
-# Training Model
-'''linear = linear_model.LinearRegression()
-# linear.fit will fit the data -> x_train, y_train to find the 'best fit' line, it will then store the info
-# on linear = easier to test it
-linear.fit(x_train, y_train)
 
-# score the info / test the accuracy of it
-accuracy = linear.score(x_test, y_test)
-print(accuracy)
 
-# open / create a file called studentmodels and save it by using pickle.dump in the directory
-# https://docs.python.org/3/library/pickle.html
-# Side note for future reference pickle is not secure, so for future files make sure its clean
-with open('studentmodels.pickle', 'wb') as file:
-    pickle.dump(linear, file) 
 '''
+# Re-Training Model for the students
+best = 0
+for _ in range(35):
+    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
+
+    # Training Model
+    linear = linear_model.LinearRegression()
+    # linear.fit will fit the data -> x_train, y_train to find the 'best fit' line, it will then store the info
+    # on linear = easier to test it
+    linear.fit(x_train, y_train)
+
+    # score the info / test the accuracy of it
+    accuracy = linear.score(x_test, y_test)
+    print(accuracy)
+
+    if accuracy > best:
+        best = accuracy
+    with open('studentmodels.pickle', 'wb') as file:
+        pickle.dump(linear, file)
+'''
+
 # 1/30/20 file loads/open & start @ pickle_in = open('studentmodels.pickle', 'rb')
 # the program skips the training process and heads straight to getting the data & saving it
-# Speed is faster
+
+# Now just loads in the model that was created aka studentmodels.pickle
 
 # Read the pickle file
 pickle_in = open('studentmodels.pickle', 'rb')
