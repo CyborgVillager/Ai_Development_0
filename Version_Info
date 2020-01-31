@@ -62,5 +62,21 @@ v8  Re-Training Model for the students Modified: line 22-42 has been commented o
                                                     sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
                                                     to line 19.
 
---v9 Graph Now Shows Data: Line 73 - 85 now will aquire the information and displays it onto a graph for
+v9 Graph Now Shows Data: Line 73 - 85 now will aquire the information and displays it onto a graph for
                             visual data gathering, and helps finding correlation between various subjects
+
+--v10 Introduction to K-Nearest Neighbors: New folder called Introduction to KNN has been made.
+                                            Basic info from the readme that has been created:
+                                            This folder will be a mla program to gather/classify data. This machine
+                                             learning algorithm will be classifing the data into each of its own
+                                             categories that it will fit.
+
+                                             Example: if the data is a dog it will be classified as a canine, cat ->
+                                             feline, tortiose -> reptile, etc.
+
+                                             For this folder it will be classifying cars in four categories depending on
+                                             the car features.
+
+                                             Source folder has been created called knn source to be used on .py file
+                                             knn_tutorial. The car data has been imported to car_data_set for this
+                                             experiment
