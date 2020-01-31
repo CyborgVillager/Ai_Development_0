@@ -64,3 +64,22 @@ predictions = linear.predict(x_test)
 print('1st / Begin grade, Semester Grade, Hours of Study Time, Failures, Absences, Actual Grade')
 for x in range(len(predictions)):
     print(predictions[x], x_test[x], y_test[x])
+
+# Basic design for the plots, this will be a scatter plot #
+# Link for more info: https://matplotlib.org/gallery/style_sheets/ggplot.html
+# As of now the points are overlapping with over students
+
+# Plot Data to use for pyplot.scatter(data[],data[])
+plot0 = 'G1'
+plot1 = 'G3'
+studytime_plot2 = 'studytime'
+failures_plot3 = 'failures'
+absences_plot4 = 'absences'
+style.use("ggplot")
+# Input data from Plot Data
+pyplot.scatter(data[absences_plot4],data[plot1])
+# Labels for the graph x & y
+pyplot.xlabel(absences_plot4)
+pyplot.ylabel('Final Grades')
+# Results
+pyplot.show()
