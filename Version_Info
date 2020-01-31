@@ -84,4 +84,7 @@ v10 Introduction to K-Nearest Neighbors: New folder called Introduction to KNN h
 v11 README Introduction to K-Nearest Neighbors Updated: Updated the information to Introduction to K-Nearest Neighbors
                                                             to assist in knowing a bit more about the application
 
---v12 Printed Out-Statement: knn_tutorial is now able to print the results from car_data_set/car.data
+v12 Printed Out-Statement: knn_tutorial is now able to print the results from car_data_set/car.data
+
+--v13 Basic Results: Results from car.data can be organized/displayed regarding their category @ file knn_tutorial.py
+                    more work is needed to refine, will update by the end of 1/31/20
