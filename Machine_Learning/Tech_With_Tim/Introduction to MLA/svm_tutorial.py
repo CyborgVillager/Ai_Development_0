@@ -4,8 +4,8 @@ from svm_source import *
 cancer = datasets.load_breast_cancer()
 
 # Results for features & target names
-print(cancer.feature_names)
-print(cancer.target_names)
+#print(cancer.feature_names)
+#print(cancer.target_names)
 
 x = cancer.data
 y = cancer.target
@@ -16,7 +16,9 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y
 # Results for training
 classes = ['malignant','benign']
 
-clf = svm.SVC(kernel='linear')
+# C = the soft margin for prediction / double amount of points to calc
+#clf = svm.SVC(kernel='linear', C=5)
+clf = KNeighborsClassifier(n_neighbors=15)
 # need better processing to use poly, will work on obtaining/creating a machine
 clf.fit(x_train,y_train)
 

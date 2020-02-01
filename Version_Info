@@ -122,7 +122,7 @@ v18 SVM Tutorial : 'SVM stands for a support vector machine. SVM's are typically
                         Edit: https://scikit-learn.org/stable/
 
 
---v19 Learning On How Support Vector Machine Works: ' support vector machine works by dividing data into multiple classes
+v19 Learning On How Support Vector Machine Works: ' support vector machine works by dividing data into multiple classes
                                                     using something called a hyper-plane. A hyper plane is a fancy word
                                                     for something that is straight that can divide data points. In 2D space
                                                      a hyper-plane is simply a line, in 3D space a hyper-plane is a plane.
@@ -143,4 +143,4 @@ v18 SVM Tutorial : 'SVM stands for a support vector machine. SVM's are typically
 
 
 ----------------------------    ----------------------------   ------------------------- -----------------------------
--wor:v20:
+--v20 KNeighborsClassifier: line 21 -> clf = KNeighborsClassifier(n_neighbors=15) used to find nearest neighbors
