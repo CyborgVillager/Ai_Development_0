@@ -145,7 +145,7 @@ v19 Learning On How Support Vector Machine Works: ' support vector machine works
 ----------------------------    ----------------------------   ------------------------- -----------------------------
 v20 KNeighborsClassifier: line 21 -> clf = KNeighborsClassifier(n_neighbors=15) used to find nearest neighbors
 
---v21 Unsupervised Algorithm K Means Clustering: Aquired K Means Clustring example from Scikit ->
+v21 Unsupervised Algorithm K Means Clustering: Aquired K Means Clustring example from Scikit ->
                                                    Intro To K Means Clustering/scikit_example_kmeans.py
 
                                                    Link to Tim's quote on K-Means
@@ -174,3 +174,10 @@ Place the corresponding centroids into that position.
 Step 4: Reassign every point once again to the closest centroid.
 Step 5: Repeat steps 3-4 until no point changes which centroid it belongs to.'
 ----------------------------    ----------------------------   ------------------------- -----------------------------
+--v22 K Means: New file created k_means.py with source folder containing both scikit example & k means source info.
+               link for more info -> https://techwithtim.net/tutorials/machine-learning-python/k-means-2/
+                 https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+                 https://scikit-learn.org/stable/modules/clustering.html
+                 https://scikit-learn.org/stable/modules/clustering.html#clustering-evaluation
+
+
