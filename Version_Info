@@ -109,7 +109,7 @@ v17 Scikit-learn / Un-organized Info: Info using scikit is able to be seen by us
                                       Link for more info for scikit: https://scikit-learn.org/stable/
 
 
---v18 SVM Tutorial : 'SVM stands for a support vector machine. SVM's are typically used for classification tasks similar
+v18 SVM Tutorial : 'SVM stands for a support vector machine. SVM's are typically used for classification tasks similar
                         to what we did with K Nearest Neighbors. They work very well for high dimensional data and
                         are allow for us to classify data that does not have a linear correspondence.'
                         ~ Tim
@@ -119,3 +119,28 @@ v17 Scikit-learn / Un-organized Info: Info using scikit is able to be seen by us
                         Main objective for the file svm_tutorial is to see the breast cancer data set and check if the
                         classification can see if its tumor/cancer/non-cancer .
 
+                        Edit: https://scikit-learn.org/stable/
+
+
+--v19 Learning On How Support Vector Machine Works: ' support vector machine works by dividing data into multiple classes
+                                                    using something called a hyper-plane. A hyper plane is a fancy word
+                                                    for something that is straight that can divide data points. In 2D space
+                                                     a hyper-plane is simply a line, in 3D space a hyper-plane is a plane.
+                                                      In any space higher than 3D it is simply called a hyper-plane.'
+                                                      ~ Tim
+                                                      Link: https://techwithtim.net/tutorials/machine-learning-python/svm-2/
+                                                          The larger the distance / easier to seperate the points and classify
+                                                      it at a better prediction on what it is.
+
+                                                     Kernels:
+                                                     'Kernels provide a way for us to create a hyper-plane for data like seen above.
+                                                      We use a kernel to bring our data up to a higher dimension (in this case from 2D->3D).
+                                                      We hope that by doing this we will have our points plotted in a way that we
+                                                      can divide them using a hyper-plane.'
+
+                                                      ~ Tim
+                                                      Function for kernel f(x1,x2) -> x3 or f(x1,x2) = x3
+
+
+----------------------------    ----------------------------   ------------------------- -----------------------------
+-wor:v20:
