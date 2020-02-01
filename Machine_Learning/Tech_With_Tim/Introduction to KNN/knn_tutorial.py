@@ -40,4 +40,16 @@ Y = list(cls)
 
 # Splitting the test, can be found @ tensortest/test.py
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
-print(x_train,y_test)
+
+# n_neighbor testing the neighbor accuracy
+model = KNeighborsClassifier(n_neighbors=10)
+model.fit(x_train,y_train)
+accuracy = model.score(x_test,y_test)
+print(accuracy)
+
+# the name that the classifier classifiy as
+predicted = model.predict(x_test)
+names = ['unacc','acc','good','vgood']
+
+for X in range(len(x_test)):
+    print('Predicited: ', names[predicted[X]], ' Data: ', x_test[X], 'Actual: ', names[y_test[X]])

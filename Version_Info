@@ -89,4 +89,17 @@ v12 Printed Out-Statement: knn_tutorial is now able to print the results from ca
 v13 Basic Results: Results from car.data can be organized/displayed regarding their category @ file knn_tutorial.py
                     more work is needed to refine, will update by the end of 1/31/20
 
---v14 Splitting Test: Program can split/train it self and see the possibilities from the data that has been provided
+v14 Splitting Test: Program can split/train it self and see the possibilities from the data that has been provided
+----------------------------    ----------------------------   ------------------------- -----------------------------
+v15 K-Nearest Neighbors: " K-Nearest Neighbors works by looking at the K closest points to the given data point
+                            (the one we want to classify) and picking the class that occurs the most to be the predicted value"
+                            ~ Tech With Tim
+
+                            K = means hyper parameter / stands for the amount of neighbors the program will look for
+                            if K = 3, the program will look for 3 closest neighbors around the point The points will 'vote'
+                             and classify it.
+
+
+--v16 Attributes Can Now Be Shown: Attributes for the car data can now be seen by the user once the program knn_tutorial.py
+                                    runs. Will show the car condition, prediction and the data involved for the car information
+
