@@ -174,10 +174,15 @@ Place the corresponding centroids into that position.
 Step 4: Reassign every point once again to the closest centroid.
 Step 5: Repeat steps 3-4 until no point changes which centroid it belongs to.'
 ----------------------------    ----------------------------   ------------------------- -----------------------------
---v22 K Means: New file created k_means.py with source folder containing both scikit example & k means source info.
+v22 K Means: New file created k_means.py with source folder containing both scikit example & k means source info.
                link for more info -> https://techwithtim.net/tutorials/machine-learning-python/k-means-2/
                  https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
                  https://scikit-learn.org/stable/modules/clustering.html
                  https://scikit-learn.org/stable/modules/clustering.html#clustering-evaluation
+
+
+--v23 TensorFlow & File Moves: Moved Knn, Svm, & Kmeans files to a folder called KNN_SVM_and_Kmeans
+                                to better organize for the lesson, and to make a new folder called
+                                 TensorFlow for the upcoming lessons.
 
 
