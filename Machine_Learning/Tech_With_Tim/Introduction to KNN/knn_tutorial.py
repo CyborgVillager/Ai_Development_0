@@ -4,6 +4,7 @@ from knn_source import *
 buying = 'buying'
 maint = 'maint'
 persons = 'persons'
+door = 'door'
 lug_boot = 'lug_boot'
 safety = 'safety'
 cls = 'class'
@@ -20,13 +21,23 @@ labencode = preprocessing.LabelEncoder()
 buying = labencode.fit_transform(list(data[buying]))
 maint = labencode.fit_transform(list(data[maint]))
 persons = labencode.fit_transform(list(data[persons]))
+door = labencode.fit_transform(list(data[door]))
 lug_boot = labencode.fit_transform(list(data[lug_boot]))
 safety = labencode.fit_transform(list(data[safety]))
 cls = labencode.fit_transform(list(data[cls]))
 
+
+
+# Result
+#print(buying)
+
 # Prediction Varia
 prediction = 'class'
 
-# Result
-print(buying)
 
+X = list(zip(buying,maint,door, persons, lug_boot, safety))
+Y = list(cls)
+
+# Splitting the test, can be found @ tensortest/test.py
+x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size = 0.1)
+print(x_train,y_test)

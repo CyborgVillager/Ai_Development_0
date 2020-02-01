@@ -86,5 +86,7 @@ v11 README Introduction to K-Nearest Neighbors Updated: Updated the information 
 
 v12 Printed Out-Statement: knn_tutorial is now able to print the results from car_data_set/car.data
 
---v13 Basic Results: Results from car.data can be organized/displayed regarding their category @ file knn_tutorial.py
+v13 Basic Results: Results from car.data can be organized/displayed regarding their category @ file knn_tutorial.py
                     more work is needed to refine, will update by the end of 1/31/20
+
+--v14 Splitting Test: Program can split/train it self and see the possibilities from the data that has been provided
