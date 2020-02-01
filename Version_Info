@@ -104,7 +104,18 @@ v16 Attributes Can Now Be Shown: Attributes for the car data can now be seen by 
                                     runs. Will show the car condition, prediction and the data involved for the car information
 
 
---v17 Scikit-learn / Un-organized Info: Info using scikit is able to be seen by user, however as of now
+v17 Scikit-learn / Un-organized Info: Info using scikit is able to be seen by user, however as of now
                                       the display is dis-organzied. Will work on fixing it
                                       Link for more info for scikit: https://scikit-learn.org/stable/
+
+
+--v18 SVM Tutorial : 'SVM stands for a support vector machine. SVM's are typically used for classification tasks similar
+                        to what we did with K Nearest Neighbors. They work very well for high dimensional data and
+                        are allow for us to classify data that does not have a linear correspondence.'
+                        ~ Tim
+
+                        New file -> svm_tutorial.py & source file -> svm_source.
+                        Changed Introduction to KNN to Introduction to MLA.
+                        Main objective for the file svm_tutorial is to see the breast cancer data set and check if the
+                        classification can see if its tumor/cancer/non-cancer .
 
