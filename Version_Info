@@ -100,6 +100,11 @@ v15 K-Nearest Neighbors: " K-Nearest Neighbors works by looking at the K closest
                              and classify it.
 
 
---v16 Attributes Can Now Be Shown: Attributes for the car data can now be seen by the user once the program knn_tutorial.py
+v16 Attributes Can Now Be Shown: Attributes for the car data can now be seen by the user once the program knn_tutorial.py
                                     runs. Will show the car condition, prediction and the data involved for the car information
+
+
+--v17 Scikit-learn / Un-organized Info: Info using scikit is able to be seen by user, however as of now
+                                      the display is dis-organzied. Will work on fixing it
+                                      Link for more info for scikit: https://scikit-learn.org/stable/
 

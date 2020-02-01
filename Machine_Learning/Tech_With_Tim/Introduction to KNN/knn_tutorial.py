@@ -51,5 +51,10 @@ print(accuracy)
 predicted = model.predict(x_test)
 names = ['unacc','acc','good','vgood']
 
+# Neighbor numbers to check / distance
+neighbor_Num = 10
+
 for X in range(len(x_test)):
     print('Predicited: ', names[predicted[X]], ' Data: ', x_test[X], 'Actual: ', names[y_test[X]])
+    n = model.kneighbors([x_test[X]],neighbor_Num,True)
+    print('N: ', n)
