@@ -39,4 +39,13 @@ print('Tested Acc: ', test_acc)
 # Training the model
 prediction = model.predict(test_images)
 # argmax -> gets the largest value and gets the largest index of that item
-print(class_names[np.argmax(prediction[0])])
+# loop through the images and see what the image is, for the user to validate the info
+for index in range(5):
+    plt.grid(False)
+    plt.imshow(test_images[index],cmap=plt.cm.binary)
+    plt.xlabel('Actual: ' + class_names[test_labels[index]])
+    plt.title('Prediction: ' + class_names[np.argmax(prediction[index])])
+    plt.show()
+
+
+

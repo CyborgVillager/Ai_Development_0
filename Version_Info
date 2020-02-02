@@ -198,7 +198,7 @@ v25 Flatting the Data & Neural Network Setup: Compress the data, easier for the 
 
 
 
---v26 Training the Model: line 39-42  Training the model ->
+v26 Training the Model: line 39-42  Training the model ->
                                     prediction = model.predict(test_images)
                                      argmax -> gets the largest value and gets the largest index of that item
                                         print(class_names[np.argmax(prediction[0])])
@@ -206,6 +206,12 @@ v25 Flatting the Data & Neural Network Setup: Compress the data, easier for the 
                                      The program will find the model/predict it after that it will find the largest
                                      value then go to the largest index of that item. Once that happens it can print out
                                      a class name with the prediction value
+
+
+--v27 Prediction Validation: the program can now test/train it self for the clothing images, then show
+                                to the user the results on SciView. The graph shows the clothing
+                                name, and have the 'results on actual' that tells the user the actual
+                                item name
 
 
 
