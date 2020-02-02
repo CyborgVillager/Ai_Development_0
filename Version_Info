@@ -185,8 +185,9 @@ v23 TensorFlow & File Moves: Moved Knn, Svm, & Kmeans files to a folder called K
                                 to better organize for the lesson, and to make a new folder called
                                  TensorFlow for the upcoming lessons.
 
---v24 Installed Tensorflow: installed Tensorflow ->
+v24 Installed Tensorflow: installed Tensorflow ->
         Link : https://www.tensorflow.org/tutorials/keras/classification
         file tensorflow0.py can now show images of the clothing objects
+        v24.5 Edit: cmap=plt.cm.binary was added to the clothing object now show its 'true colors'
 
 

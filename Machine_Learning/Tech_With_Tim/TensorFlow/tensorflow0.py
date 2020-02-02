@@ -9,5 +9,5 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 
 
 # show image of the data
-plt.imshow(train_images[7])
+plt.imshow(train_images[7], cmap=plt.cm.binary)
 plt.show()
