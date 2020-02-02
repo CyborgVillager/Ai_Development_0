@@ -189,5 +189,9 @@ v24 Installed Tensorflow: installed Tensorflow ->
         Link : https://www.tensorflow.org/tutorials/keras/classification
         file tensorflow0.py can now show images of the clothing objects
         v24.5 Edit: cmap=plt.cm.binary was added to the clothing object now show its 'true colors'
+        --v25.8 Compression of Data: compress the data to 28 by 28. line 11-12
+
+
+
 
 
