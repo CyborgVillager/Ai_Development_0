@@ -208,10 +208,11 @@ v26 Training the Model: line 39-42  Training the model ->
                                      a class name with the prediction value
 
 
---v27 Prediction Validation: the program can now test/train it self for the clothing images, then show
+v27 Prediction Validation: the program can now test/train it self for the clothing images, then show
                                 to the user the results on SciView. The graph shows the clothing
                                 name, and have the 'results on actual' that tells the user the actual
                                 item name
 
+----------------------------    ----------------------------   ------------------------- -----------------------------
 
-
+--v28 Temp Suspend: Will resume this project on 2/5/20

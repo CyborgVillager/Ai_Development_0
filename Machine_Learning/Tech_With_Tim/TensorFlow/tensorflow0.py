@@ -37,6 +37,8 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('Tested Acc: ', test_acc)
 '''
 # Training the model
+#prediction = model.predict(test_images)
+# Predict for 1 image
 prediction = model.predict(test_images)
 # argmax -> gets the largest value and gets the largest index of that item
 # loop through the images and see what the image is, for the user to validate the info
