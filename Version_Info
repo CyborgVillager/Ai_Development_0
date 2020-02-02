@@ -192,11 +192,20 @@ v24 Installed Tensorflow: installed Tensorflow ->
         v24.8 Compression of Data: compress the data to 28 by 28 pixels. line 11-12
 
 
---v25 Flatting the Data & Neural Network Setup: Compress the data, easier for the system to read/process for itself
+v25 Flatting the Data & Neural Network Setup: Compress the data, easier for the system to read/process for itself
                                                  the file tensorflow0.py now has a basic Neural Network to check the
                                                  images and make and accuracte guess to what it is
 
 
+
+--v26 Training the Model: line 39-42  Training the model ->
+                                    prediction = model.predict(test_images)
+                                     argmax -> gets the largest value and gets the largest index of that item
+                                        print(class_names[np.argmax(prediction[0])])
+
+                                     The program will find the model/predict it after that it will find the largest
+                                     value then go to the largest index of that item. Once that happens it can print out
+                                     a class name with the prediction value
 
 
 

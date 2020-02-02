@@ -32,5 +32,11 @@ plt.imshow(train_images[5], cmap=plt.cm.binary)
 plt.show()
 '''
 
+'''
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('Tested Acc: ', test_acc)
+'''
+# Training the model
+prediction = model.predict(test_images)
+# argmax -> gets the largest value and gets the largest index of that item
+print(class_names[np.argmax(prediction[0])])
