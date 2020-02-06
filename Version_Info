@@ -217,4 +217,10 @@ v27 Prediction Validation: the program can now test/train it self for the clothi
 
 v28 Temp Suspend: Will resume this project on 2/5/20
 
---v29 Resume 2/6/20: Updated TensorFlow folder to include tensorflow1 for text classification
+v29 Resume 2/6/20: Updated TensorFlow folder to include tensorflow1 for text classification
+
+--v30 Ai_Development_1 Created: Created a new folder to hold future information regarding A.I development. Updated
+                                tensorflow1.py to print out a list from keras.datasets.imdb.
+                                Each of these int points to certain words, helps the user to find specific information
+                                of their choosing by making the movie review into a list, now need to work on a mapping
+                                to make it easier for humans to read it
