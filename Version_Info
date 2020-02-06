@@ -244,6 +244,10 @@ v31 tensorflow1 <START>: Information can be aquired / decoded into human languag
                             line 41-43 Results
 ----------------------------    ----------------------------   ------------------------- -----------------------------
 
---v31 Pre-processing the data, makes the form consistent: Also added Defining the model information line 51-57 to
+v31 Pre-processing the data, makes the form consistent: Also added Defining the model information line 51-57 to
                                                             check whether or not the movie is good or bad, need to work
                                                             further to show results.
+                                                            --v31.5 Embeded Layer Info: Embedding Layers to make
+                                                                                similiar information closer together
+
+
