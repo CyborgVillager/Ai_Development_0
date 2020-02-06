@@ -55,11 +55,46 @@ model.add(keras.layers.GlobalAveragePooling1D())
 model.add(keras.layers.Dense(16, activation='relu'))
 model.add(keras.layers.Dense(1,activation='sigmoid'))
 # Checks whether or not the final review is good or bad
+model.summary()
+
+# binary_crossentropy -> 2 options for open nueron 0 or 1 the loss will calc the differences 0.2 to 0 .
+model.compile(optimizer='adam',loss='binary_crossentropy', metrics=['accuracy'])
+
+# split the training data into 2 sets
+# Validation Data is used to check how well the model is performing based on
+# the training data for the new data
+# basic thinking for the computer
+
+x_val = train_data[:10000]
+x_train = train_data[10000:]
+
+y_val = train_labels[:10000]
+y_train = train_labels[10000:]
+
+fit_Model = model.fit(x_train,y_train,epochs=40, batch_size=512, validation_data=(x_val,y_val), verbose=1)
+
+# results for model
+results = model.evaluate(test_data,test_labels)
+print(results)
+print('This is the results for accuracy')
+space()
+
+# Results for movie review
+test_review = test_data[0]
+prediction = model.predict([test_review])
+print('Review: ')
+print(decoder_review(test_review))
+print('Predicition: ' + str(prediction[0]))
+print('Actual: ' + str(test_labels[0]))
+print(results)
+
 
 
 # Decoder Results
-print('This is decoder review results')
+'''
 space()
+print('This is decoder review results')
 print(decoder_review(test_data[0]))
 space()
 print(decoder_review(test_data[1]))
+'''
