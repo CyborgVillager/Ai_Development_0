@@ -230,7 +230,7 @@ v31 Updated Folder Placement: Updated folder placement for Machine_Learning_0, &
                                     be able to see my custom folder/information on v30.
 
 
---v31 tensorflow1 <START>: Information can be aquired / decoded into human language @ tensorflow1.py
+v31 tensorflow1 <START>: Information can be aquired / decoded into human language @ tensorflow1.py
                             Commented/info from tensorflow1.py
                             -> training data set which are associated  with the keys
                             -> as of now just adding 3 from line 16 to make our own values that stands for line 20-23
@@ -243,3 +243,7 @@ v31 Updated Folder Placement: Updated folder placement for Machine_Learning_0, &
                             line 33 decodes the information into human language.
                             line 41-43 Results
 ----------------------------    ----------------------------   ------------------------- -----------------------------
+
+--v31 Pre-processing the data, makes the form consistent: Also added Defining the model information line 51-57 to
+                                                            check whether or not the movie is good or bad, need to work
+                                                            further to show results.
