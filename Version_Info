@@ -226,5 +226,20 @@ v30 Ai_Development_1 Created: Created a new folder to hold future information re
                                 to make it easier for humans to read it.
 
 
---v31 Updated Folder Placement: Updated folder placement for Machine_Learning_0, & Ai_Development_0. Due to .git not
+v31 Updated Folder Placement: Updated folder placement for Machine_Learning_0, & Ai_Development_0. Due to .git not
                                     be able to see my custom folder/information on v30.
+
+
+--v31 tensorflow1 <START>: Information can be aquired / decoded into human language @ tensorflow1.py
+                            Commented/info from tensorflow1.py
+                            -> training data set which are associated  with the keys
+                            -> as of now just adding 3 from line 16 to make our own values that stands for line 20-23
+                            -> PAD = padding, Unk = unknown
+                            -> swap the values in the keys, which makes the dict to have the value 1st as in int goes to the word
+                            -> similiar to  print(train_data[0]) but for humans @ line 10.
+                            -> basically just reversing the info dict
+                            -> reverse_word_index = dict([(value,key) for (key,value) in words_index.items()])
+
+                            line 33 decodes the information into human language.
+                            line 41-43 Results
+----------------------------    ----------------------------   ------------------------- -----------------------------
