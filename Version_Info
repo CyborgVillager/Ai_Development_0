@@ -259,4 +259,7 @@ v33 Saving & Loading Data: Also known as check-pointing the model - > predicitio
                                 data then can process it a bit faster by cutting off un-ness info. line 104-114 is used
                                   for model prediction
 
---v34 ChatBot: ChatBot_0 build in prog. located @ ChatBot_0, chatbot_source created
+v34 ChatBot: ChatBot_0 build in prog. located @ ChatBot_0, chatbot_source created
+                --v34.5 json file added Edit: tutorial for the chatbot can be found at link:
+                                                https://techwithtim.net/tutorials/ai-chatbot/
+                                                The Chatbot name will be -> ChatBot Miden
