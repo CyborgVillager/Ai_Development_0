@@ -215,4 +215,6 @@ v27 Prediction Validation: the program can now test/train it self for the clothi
 
 ----------------------------    ----------------------------   ------------------------- -----------------------------
 
---v28 Temp Suspend: Will resume this project on 2/5/20
+v28 Temp Suspend: Will resume this project on 2/5/20
+
+--v29 Resume 2/6/20: Updated TensorFlow folder to include tensorflow1 for text classification
