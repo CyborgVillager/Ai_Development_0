@@ -251,5 +251,10 @@ v31 Pre-processing the data, makes the form consistent: Also added Defining the 
                                                                                 similiar information closer together
 
 
---v32 Basic Prediction / model Review: the program can do some prediction of a review for a commenter response to a
+v32 Basic Prediction / model Review: the program can do some prediction of a review for a commenter response to a
                                         movie.
+
+
+--v33 Saving & Loading Data: Also known as check-pointing the model - > predicition is able to aquire data from saved
+                                data then can process it a bit faster by cutting off un-ness info. line 104-114 is used
+                                  for model prediction

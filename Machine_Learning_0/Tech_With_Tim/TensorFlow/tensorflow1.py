@@ -1,7 +1,7 @@
 from tensor_source import *
 
 data = keras.datasets.imdb
-(train_data, train_labels), (test_data, test_labels) = data.load_data(num_words=10000)
+(train_data, train_labels), (test_data, test_labels) = data.load_data(num_words=88000)
 
 # This results aquire the integer encoded words of 'movie reviews' from keras.datasets.imdb
 # Each of these int points to certain words, helps the user to find specific information of their choosing by
@@ -28,20 +28,23 @@ words_index['<UNUSED>'] = 3
 # basically just reversing the info dict
 reverse_word_index = dict([(value, key) for (key, value) in words_index.items()])
 
-
 #  Pre-processing the data, makes the form consistent
 train_data = keras.preprocessing.sequence.pad_sequences(train_data, value=words_index['<PAD>'],
-                                                        padding='post', maxlen=250) # makes the padding for all the info
+                                                        padding='post',
+                                                        maxlen=250)  # makes the padding for all the info
 
 test_data = keras.preprocessing.sequence.pad_sequences(test_data, value=words_index['<PAD>'],
-                                                        padding='post', maxlen=250)
-
+                                                       padding='post', maxlen=250)
+'''
 # preprocessing  RESULT
 print('this is preprocessing results')
 print(len(train_data), len(test_data))
+'''
+
 # Func Decoder for human lang -> English
 def decoder_review(text):
     return ' '.join([reverse_word_index.get(index0, '?') for index0 in text])
+
 
 # Space for Results
 def space():
@@ -50,15 +53,15 @@ def space():
 
 # Defining the model
 model = keras.Sequential()
-model.add(keras.layers.Embedding(10000,16))
+model.add(keras.layers.Embedding(88000, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
 model.add(keras.layers.Dense(16, activation='relu'))
-model.add(keras.layers.Dense(1,activation='sigmoid'))
+model.add(keras.layers.Dense(1, activation='sigmoid'))
 # Checks whether or not the final review is good or bad
 model.summary()
 
 # binary_crossentropy -> 2 options for open nueron 0 or 1 the loss will calc the differences 0.2 to 0 .
-model.compile(optimizer='adam',loss='binary_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # split the training data into 2 sets
 # Validation Data is used to check how well the model is performing based on
@@ -71,14 +74,48 @@ x_train = train_data[10000:]
 y_val = train_labels[:10000]
 y_train = train_labels[10000:]
 
-fit_Model = model.fit(x_train,y_train,epochs=40, batch_size=512, validation_data=(x_val,y_val), verbose=1)
-
+fit_Model = model.fit(x_train, y_train, epochs=40, batch_size=512, validation_data=(x_val, y_val), verbose=1)
+'''
 # results for model
-results = model.evaluate(test_data,test_labels)
+results = model.evaluate(test_data, test_labels)
 print(results)
 print('This is the results for accuracy')
 space()
+'''
+# Saving the model
+# h5 -> extension for saved model in keras
+model.save(('model.h5'))
+# Load the model
+model = keras.models.load_model('model.h5')
 
+def review_encode(string0):
+    encoded = [1]
+
+    for word in string0:
+        if word.lower() in words_index:
+            encoded.append(words_index[word.lower()])
+        else:
+            encoded.append(2)
+    return encoded
+
+
+# Testing the model
+with open('test.txt', encoding='utf-8') as f:
+    for line in f.readlines():
+        nline = line.replace(",", "").replace(".", "").replace("(", "").replace(")", "").replace(":", "")\
+            .replace("\"","").strip().split(" ")
+# encoding
+        encode = review_encode(nline)
+        encode = keras.preprocessing.sequence.pad_sequences([encode], value=words_index['<PAD>'],
+                                                               padding='post', maxlen=250)
+        predict = model.predict(encode)
+        print(line)
+        print(encode)
+        print(predict[0])
+
+
+
+'''
 # Results for movie review
 test_review = test_data[0]
 prediction = model.predict([test_review])
@@ -87,11 +124,11 @@ print(decoder_review(test_review))
 print('Predicition: ' + str(prediction[0]))
 print('Actual: ' + str(test_labels[0]))
 print(results)
-
-
-
-# Decoder Results
 '''
+
+'''
+# Decoder Results
+
 space()
 print('This is decoder review results')
 print(decoder_review(test_data[0]))
