@@ -1,9 +1,4 @@
-from tkinter import *
-import time
-import tkinter.messagebox
-from bot import chat
-import pyttsx3
-import threading
+from chatbot_source import *
 
 saved_username = ["You"]
 # ans=["PyBot"]

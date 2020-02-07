@@ -265,6 +265,13 @@ v34 ChatBot: ChatBot_0 build in prog. located @ ChatBot_0, chatbot_source create
                                                 The Chatbot name will be -> ChatBot Miden
 
 
---v35 New ChatBot Miden: modified ChatBot, thanks from Okay Dexter his video: https://www.youtube.com/watch?v=Z9V2gxc3Z5Q&t=1992s
+v35 New ChatBot Miden: modified ChatBot, thanks from Okay Dexter his video: https://www.youtube.com/watch?v=Z9V2gxc3Z5Q&t=1992s
                 His github link for the respo: https://github.com/abhishek305/PyBot-A-ChatBot-For-Answering-Python-Queries-Using-NLP
                 Basic info is making a chatbot using tkinter,nltk & txt to speech
+
+
+--v36 Pip install & basic info: make sure you do -> pip install pyttsx3
+                                anyhow thanks again to Okay Dexter for the tutorial on making a gui interface for a chat-
+                                bot, with the basic process on making the ai to respond to user input.
+                                Will be using this respo as an reference for future chat bots that I'll be makinh in the
+                                future.

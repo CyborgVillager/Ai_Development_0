@@ -1,7 +1,6 @@
 # Meet Pybot: your friend
 
-import nltk
-import warnings
+from chatbot_source import *
 
 warnings.filterwarnings("ignore")
 # nltk.download() # for downloading packages
