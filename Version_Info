@@ -270,8 +270,12 @@ v35 New ChatBot Miden: modified ChatBot, thanks from Okay Dexter his video: http
                 Basic info is making a chatbot using tkinter,nltk & txt to speech
 
 
---v36 Pip install & basic info: make sure you do -> pip install pyttsx3
+v36 Pip install & basic info: make sure you do -> pip install pyttsx3
                                 anyhow thanks again to Okay Dexter for the tutorial on making a gui interface for a chat-
                                 bot, with the basic process on making the ai to respond to user input.
                                 Will be using this respo as an reference for future chat bots that I'll be makinh in the
                                 future.
+
+
+--v37 Continuation:   A new respo has been created as a continuation / in-depth for Ai Development
+                    Link: https://github.com/CyborgVillager/Python_Machine_Learning

@@ -6,3 +6,6 @@
  A.I Development (▀̿Ĺ̯▀̿ ̿)
  
  [Tech With Tim MLA Tutorial]( https://www.youtube.com/watch?v=WFr2WgN9_xE)
+
+Continuation to A.I development: [Python Machine Learning](https://github.com/CyborgVillager/Python_Machine_Learning)
+> This respo will go into depth for AI & machine learning strategies
